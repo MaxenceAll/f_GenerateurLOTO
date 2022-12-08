@@ -39,7 +39,8 @@ namespace f_GenerateurLOTO
 
             for (int i = 0; i < nbTirageGodet; i++)
             {
-                int aTirer = randomizer.Next(tailleGodet)-1;
+                int aTirer = randomizer.Next(tailleGodet);
+                //MessageBox.Show(Convert.ToString(aTirer-1));
                 godetTire.Add(godetATirer[aTirer]);
                 godetATirer.RemoveAt(aTirer);
             }
@@ -49,7 +50,7 @@ namespace f_GenerateurLOTO
             string str = "";
             for (int i = 0; i < godetTire.Count; i++)
             {
-                str += "Tirage " + i + " = " + godetTire[i].toString() +"\n";
+                str += "Tirage " + (i+1) + " = " + godetTire[i].toString() +"\n";
             }
             //MessageBox.Show(str);
             return str;

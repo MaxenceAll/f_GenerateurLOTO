@@ -19,7 +19,7 @@ namespace f_GenerateurLOTO
 
         private void retry_Click(object sender, EventArgs e)
         {
-
+            Classique classique = new Classique(); classique.tirer();
         }
     }
 }

@@ -2,6 +2,7 @@ namespace f_GenerateurLOTO
 {
     public partial class MainMenu : Form
     {
+        Classique classique = new Classique();
         public MainMenu()
         {
             InitializeComponent();
@@ -12,7 +13,7 @@ namespace f_GenerateurLOTO
         {
             switch (choixJeu.SelectedIndex)
             {
-                case 0: Classique classique = new Classique(); classique.tirer(); break;
+                case 0: classique.tirer(); break;
                 case 1: break;
                 default: break;
             }
