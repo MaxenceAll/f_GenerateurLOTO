@@ -7,10 +7,21 @@ namespace f_GenerateurLOTO
             InitializeComponent();
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            Classique classique = new Classique();
-            classique.tirer();
+            switch (choixJeu.SelectedIndex)
+            {
+                case 0: Classique classique = new Classique(); classique.tirer(); break;
+                case 1: break;
+                default: break;
+            }
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

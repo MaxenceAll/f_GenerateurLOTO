@@ -15,7 +15,7 @@ namespace f_GenerateurLOTO
         private List<Objet> godetTire;
         private String nomObjet;
         private int nbTirageGodet;
-        private int tailleGodet;
+        private int tailleGodet;        
 
         // Constructor
         //////////////
@@ -33,20 +33,26 @@ namespace f_GenerateurLOTO
 
         // Methods
         ///////////
-        public void tirer()
+        public string tirer()
         {
             Random randomizer = new Random();
 
             for (int i = 0; i < nbTirageGodet; i++)
             {
-                int aTirer = randomizer.Next(tailleGodet);
+                int aTirer = randomizer.Next(tailleGodet)-1;
                 godetTire.Add(godetATirer[aTirer]);
                 godetATirer.RemoveAt(aTirer);
             }
 
-            MessageBox.Show("Tirage de " + nbTirageGodet + " " + nomObjet + " parmi " + tailleGodet);
+            //MessageBox.Show("Tirage de " + nbTirageGodet + " " + nomObjet + " parmi " + tailleGodet);
             //msgBox.afficherInfo(godetTire.toString(), "Tirage effectué !!!");
-            //System.out.println(godetTire);
+            string str = "";
+            for (int i = 0; i < godetTire.Count; i++)
+            {
+                str += "Tirage " + i + " = " + godetTire[i].toString() +"\n";
+            }
+            //MessageBox.Show(str);
+            return str;
         }
 
         // To String
