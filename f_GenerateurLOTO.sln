@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "f_GenerateurLOTO", "f_GenerateurLOTO.csproj", "{C698C6A5-E87B-4CC6-9EAD-396B4C64F3E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C698C6A5-E87B-4CC6-9EAD-396B4C64F3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C698C6A5-E87B-4CC6-9EAD-396B4C64F3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C698C6A5-E87B-4CC6-9EAD-396B4C64F3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C698C6A5-E87B-4CC6-9EAD-396B4C64F3E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23142237-26E3-4EEF-B007-397E126E4FFA}
+	EndGlobalSection
+EndGlobal
